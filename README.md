@@ -22,3 +22,7 @@ To use down.py to download Agent projects, make sure to specify the target folde
 python prescan.py
 ```
 Since there are many irrelevant files in the Agent projects, such as documentation files, it is necessary to preprocess the Agent projects using the above command.
+```
+python Scan_Defect.py
+```
+You will then need to run the above script based on the errors you want to analyze. Note that you should update your OpenAI API or the relevant LLM in the corresponding defect script. Additionally, if you are scanning on a large scale, we highly recommend using multithreading for faster processing.
